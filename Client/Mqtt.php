@@ -79,7 +79,7 @@
         function subscribeToTopic() {
             subscribedTopic = document.getElementById("subscribeTopic").value.trim();
             if (subscribedTopic === "") {
-                alert("Please enter a topic to subscribe to.");
+                alert("Please enter a topic to subscribe.");
                 return;
             }
             client.subscribe(subscribedTopic, function (err) {
